@@ -10,13 +10,13 @@ using System.Text.RegularExpressions;
 
 namespace Just_a_random_for_a_song
 {
-    class TV
+    public class TV
     {
         // class members
-        Stopwatch watch;
-        List<string> tv;
-        List<string> MessageTv;
-        int Delay = 175;
+        private Stopwatch watch;
+        private List<string> tv;
+        private List<string> MessageTv;
+        private int Delay = 175;
 
         // Constructor
         public TV()
@@ -29,7 +29,7 @@ namespace Just_a_random_for_a_song
             {
                 this.tv.Add(Regex.Replace(item, "~~~~~~~~~~~~~|#############", "             "));
             }
-        } //tv
+        } //tv constructor
 
         public void Play() 
         {
@@ -166,14 +166,14 @@ namespace Just_a_random_for_a_song
                 DisplayOnBothLines(lines[linesIndex].Item1, lines[linesIndex].Item2, index);
             }
         }// helper method for the multiple lines method
-
-
         // will simply set display time
         public void SetDelayTime(int time) 
         {
             Delay = time;
         } // set delay time
 
+
+        #region Private helper methods
         // private helper methods
         private string InsertTVTwo(string msg, string tv, int index)
         {
@@ -226,5 +226,6 @@ namespace Just_a_random_for_a_song
             } // read lines
             return result;
         }
+        #endregion
     } // will simply loop through a string of 
 }

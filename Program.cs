@@ -14,29 +14,37 @@ namespace Just_a_random_for_a_song
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            string title = File.ReadAllText(@"C:\Users\daria\projects\AdventureTime_Lyrics_App\bin\Debug\Text_Art\Title\Adventure_Time.txt");
-    
-            Console.WriteLine("\n" + title);
-            Console.WriteLine("\nPress any key to continue....");
+            #region Main code
+            //Console.ForegroundColor = ConsoleColor.Cyan;
+            //string title = File.ReadAllText(@"C:\Users\daria\projects\AdventureTime_Lyrics_App\bin\Debug\Text_Art\Title\Adventure_Time.txt");
 
-            Console.ReadKey();
-            
-            // make tv and play
-            MusicPlayer player = new MusicPlayer();
-            TV tv = new TV();
+            //Console.WriteLine("\n" + title);
+            //Console.WriteLine("\nPress any key to continue....");
 
-            //// Display the title
+            //Console.ReadKey();
+
+            //// make tv and play
+            //MusicPlayer player = new MusicPlayer();
+            //TV tv = new TV();
+
+            ////// Display the title
             //tv.Play("Island", "Song", 2500);
 
-            player.Play("Music/Island Song (Come Along with Me) (feat. Ashley Eriksson).mp3");
-            tv.SetDelayTime(100);
-            tv.Play(MakeLines());
-            player.Stop();
+            //player.Play("Music/Island Song (Come Along with Me) (feat. Ashley Eriksson).mp3");
+            //tv.SetDelayTime(100);
+            //tv.Play(MakeLines());
+            //player.Stop();
+            #endregion
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            TV tv = new TV();
+
+            tv.Play("Darian", "+ Carlin = <3", 1000000000);
 
             Console.WriteLine("Press any key to close...");
             Console.ReadKey();
         }
+        #region readTextScenes
         //static List<string> ReadTextScenes(string path) 
         //{
         //    List<string> result = new List<string>();
@@ -55,6 +63,7 @@ namespace Just_a_random_for_a_song
         //    } // read lines
         //    return result;
         //}
+        #endregion
         private static List<Tuple<string, string, int>> MakeLines() 
         {
             List<Tuple<string, string, int>> result = new List<Tuple<string, string, int>>();
