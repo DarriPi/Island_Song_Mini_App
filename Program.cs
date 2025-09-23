@@ -15,29 +15,26 @@ namespace Just_a_random_for_a_song
         static void Main(string[] args)
         {
             #region Main code
-            //Console.ForegroundColor = ConsoleColor.Cyan;
-            //string title = File.ReadAllText(@"C:\Users\daria\projects\AdventureTime_Lyrics_App\bin\Debug\Text_Art\Title\Adventure_Time.txt");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            string title = File.ReadAllText(@"C:\Users\daria\projects\AdventureTime_Lyrics_App\bin\Debug\Text_Art\Title\Adventure_Time.txt");
 
-            //Console.WriteLine("\n" + title);
-            //Console.WriteLine("\nPress any key to continue....");
+            Console.WriteLine("\n" + title);
+            Console.WriteLine("\nPress any key to continue....");
 
-            //Console.ReadKey();
+            Console.ReadKey();
 
-            //// make tv and play
-            //MusicPlayer player = new MusicPlayer();
-            //TV tv = new TV();
-
-            ////// Display the title
-            //tv.Play("Island", "Song", 2500);
-
-            //player.Play("Music/Island Song (Come Along with Me) (feat. Ashley Eriksson).mp3");
-            //tv.SetDelayTime(100);
-            //tv.Play(MakeLines());
-            //player.Stop();
-            #endregion
-
-            Console.ForegroundColor = ConsoleColor.Blue;
+            // make tv and play
+            MusicPlayer player = new MusicPlayer();
             TV tv = new TV();
+
+            //// Display the title
+            tv.Play("Island", "Song", 2500);
+
+            player.Play("Music/Island Song (Come Along with Me) (feat. Ashley Eriksson).mp3");
+            tv.SetDelayTime(100);
+            tv.Play(MakeLines());
+            player.Stop();
+            #endregion
 
             Console.WriteLine("Press any key to close...");
             Console.ReadKey();
@@ -83,7 +80,7 @@ namespace Just_a_random_for_a_song
             result.Add(new Tuple<string, string, int>("   WITH YOU", "<3<3<3", 2200));
             result.Add(new Tuple<string, string, int>("Maybe by", "next summer", 3000));
             result.Add(new Tuple<string, string, int>("We won't", "have changed", 3000));
-            result.Add(new Tuple<string, string, int>("  OUR TUNES", "\\(OcO)/", 2000));
+            result.Add(new Tuple<string, string, int>("  OUR TUNES", "", 2000));
             result.Add(new Tuple<string, string, int>("We'll still", "want to be", 3000));
             result.Add(new Tuple<string, string, int>("With the", "butterflies", 2500));
             result.Add(new Tuple<string, string, int>("and BEES", "<(||)''", 1500));
@@ -93,13 +90,13 @@ namespace Just_a_random_for_a_song
             result.Add(new Tuple<string, string, int>("I'll share", "them all", 2750));
             result.Add(new Tuple<string, string, int>("  WITH YOU", "<3<3<3)", 1500));
             result.Add(new Tuple<string, string, int>("I'll be here", "for you", 2750));
-            result.Add(new Tuple<string, string, int>("ALWAYS", "(INFINITY)", 2000));
+            result.Add(new Tuple<string, string, int>("ALWAYS", "∞", 2000));
             result.Add(new Tuple<string, string, int>("And always", "be with you", 4000));
             result.Add(new Tuple<string, string, int>("Come along", "with me", 3500));
             result.Add(new Tuple<string, string, int>("And the", "butterflies", 1700));
             result.Add(new Tuple<string, string, int>("and BEES", "<(||)''", 1700));
             result.Add(new Tuple<string, string, int>("We can wander", "through the", 1700));
-            result.Add(new Tuple<string, string, int>("  FOREST", "*************", 1700));
+            result.Add(new Tuple<string, string, int>("  FOREST", "************", 1700));
             result.Add(new Tuple<string, string, int>("And do so", "as we please", 2000));
             result.Add(new Tuple<string, string, int>("And living", "so merrily", 10000));
 

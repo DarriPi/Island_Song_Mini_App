@@ -108,7 +108,7 @@ namespace Just_a_random_for_a_song
                 }
                 index++;
                 Thread.Sleep(Delay);
-            } /// animate forever
+            } 
             watch.Stop();
             watch.Reset();
             Console.CursorVisible = true;
@@ -125,7 +125,8 @@ namespace Just_a_random_for_a_song
 
         /// <summary>
         /// Will allow you to play lines and lines of songs using 
-        /// a list of tuples Item1, is the line and item2 the time to display
+        /// a list of tuples Item1 is the line 1 of the tv and item2 is line 2. The time to display
+        /// is item3
         /// </summary>
         /// <param name="lines">Provide a lit of tuples with the line and length to play in miliseconds</param>
         public void Play(List<Tuple<string, string, int>> lines) 
