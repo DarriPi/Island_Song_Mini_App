@@ -39,8 +39,6 @@ namespace Just_a_random_for_a_song
             Console.ForegroundColor = ConsoleColor.Blue;
             TV tv = new TV();
 
-            tv.Play("Darian", "+ Carlin = <3", 1000000000);
-
             Console.WriteLine("Press any key to close...");
             Console.ReadKey();
         }
